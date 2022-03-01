@@ -1,0 +1,19 @@
+{
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "display": "Node",
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "lib": [
+      "esnext"
+    ],
+    "declaration": false
+  }
+}
