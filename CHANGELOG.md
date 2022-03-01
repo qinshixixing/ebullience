@@ -1,4 +1,15 @@
-# 0.1.0 (2022-03-01)
+## [0.1.1](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.0...ebullience/0.1.1) (2022-03-01)
+
+
+### Features
+
+* **添加web-project-config包:** 添加web-project-config包 ([097824f](https://github.com/qinshixixing/ebullience/commit/097824fb1e055a2843fd029b33aa55b9ac88fbf9))
+* **修改依赖:** 修复依赖冲突 ([8a780db](https://github.com/qinshixixing/ebullience/commit/8a780db513d13ff4c361f3673a6c0cebded21c37))
+* **修改依赖:** 修改依赖 ([5064836](https://github.com/qinshixixing/ebullience/commit/5064836f818e45092228f25d1f6b91fdccf3dfd4))
+
+
+
+# [v0.1.0](https://github.com/qinshixixing/ebullience/compare/19c7130908da168f8906190229fa18ca2c1ca93f...ebullience/v0.1.0) (2022-03-01)
 
 
 ### Features
