@@ -1,0 +1,46 @@
+{
+  "name": "@nova/web-project-config",
+  "author": "qinshixixing",
+  "version": "0.0.0",
+  "license": "Apache",
+  "description": "前端项目代码配置文件",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinshixixing/ebullience.git",
+    "directory": "packages/web-project-config"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "files": [
+    "dist",
+    "src",
+    "type",
+    "typescript-web",
+    "typescript-node"
+  ],
+  "dependencies": {
+    "@tsconfig/recommended": "^1.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.2",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "prettier": "^2.5.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-css-modules": "^3.0.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^22.0.0",
+    "stylelint-css-modules": "*",
+    "typescript": "^4.6.2"
+  }
+}

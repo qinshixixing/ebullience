@@ -1,0 +1,22 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "display": "Web",
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "es5",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": false,
+    "removeComments": true,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "declaration": false
+  }
+}

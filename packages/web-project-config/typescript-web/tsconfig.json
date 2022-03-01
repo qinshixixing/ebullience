@@ -1,0 +1,21 @@
+{
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  "display": "WebNode",
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "removeComments": true,
+    "jsx": "react",
+    "moduleResolution": "classic",
+    "sourceMap": true,
+    "noEmitOnError": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "declaration": false
+  }
+}
