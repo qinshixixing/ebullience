@@ -1,0 +1,36 @@
+{
+  "name": "{{name}}",
+  "author": "{{author}}",
+  "version": "0.0.0",
+  "license": "Apache",
+  "description": "{{description}}",
+  "scripts": {
+    "build": "tsc"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "",
+    "directory": "packages/{{name}}"
+  },
+{{#if isWeb}}
+  "engines": {
+    "node": ">=14.0.0"
+  },
+{{else}}
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "{{#if isCommonjs}}commonjs{{else}}module{{/if}}",
+{{/if}}
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "files": [
+    "dist",
+    "src",
+    "type"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+{{#if isWeb}}
+{{else}}
+    "module": "{{#if isCommonjs}}commonjs{{else}}esnext{{/if}}"
+{{/if}}
+  },
+  "include": ["src"]
+}

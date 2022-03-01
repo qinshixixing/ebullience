@@ -1,0 +1,40 @@
+{
+  "name": "@ebullience/dev-scripts",
+  "author": "qinshixixing",
+  "version": "0.0.2",
+  "license": "Apache",
+  "description": "库开发脚本",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinshixixing/ebullience.git",
+    "directory": "packages/dev-scripts"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "files": [
+    "dist",
+    "src",
+    "type",
+    "template"
+  ],
+  "bin": {
+    "eb-dev-scripts": "dist/bin.js"
+  },
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "dayjs": "^1.10.8",
+    "fs-extra": "^10.0.1",
+    "handlebars": "^4.7.7",
+    "inquirer": "^8.2.0",
+    "semver": "^7.3.5",
+    "yargs": "^17.3.1"
+  }
+}
