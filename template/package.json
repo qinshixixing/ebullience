@@ -1,0 +1,27 @@
+{
+  "name": "@ebullience/{{name}}",
+  "author": "{{author}}",
+  "version": "0.0.0",
+  "license": "Apache",
+  "description": "{{description}}",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinshixixing/ebullience.git",
+    "directory": "packages/{{name}}"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "{{#if isCommonjs}}commonjs{{else}}module{{/if}}",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "files": [
+    "dist",
+    "src",
+    "type"
+  ]
+}

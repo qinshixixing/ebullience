@@ -1,5 +1,5 @@
 import yargsFn from 'yargs';
-import type { Options as YargsOptions, Argv } from 'yargs';
+import type { Options as YargsOptions } from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
 import { allCommand, allOptions } from './options.js';
