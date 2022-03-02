@@ -1,4 +1,14 @@
-## [0.1.2](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.1...ebullience/0.1.2) (2022-03-02)
+## [0.1.3](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.2...ebullience/0.1.3) (2022-03-02)
+
+
+### Features
+
+* **添加init库:** 添加init库 ([66ca64b](https://github.com/qinshixixing/ebullience/commit/66ca64bf38cfb8c71c1359cf3e88935da5ac0bcd))
+* **修改eslint配置文件:** 修改eslint配置文件 ([302d1c8](https://github.com/qinshixixing/ebullience/commit/302d1c8d1af496d3a43d46dc6706a34a1c55b1fd))
+
+
+
+## [v0.1.2](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.1...ebullience/v0.1.2) (2022-03-02)
 
 
 ### Features
