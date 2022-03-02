@@ -1,4 +1,15 @@
-## [0.1.1](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.0...ebullience/0.1.1) (2022-03-01)
+## [0.1.2](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.1...ebullience/0.1.2) (2022-03-02)
+
+
+### Features
+
+* **提交新包模版代码:** 提交新包模版代码 ([6b2c0cf](https://github.com/qinshixixing/ebullience/commit/6b2c0cf5c154d13828ce19dd836c6b1d2a72ef56))
+* **添加webpack-project-config包:** 添加webpack-project-config包 ([b7c9cd3](https://github.com/qinshixixing/ebullience/commit/b7c9cd302b1ac472797d6fcee20bd48d5ceddd61))
+* **添加webpack包:** 添加webpack包 ([7fdb47d](https://github.com/qinshixixing/ebullience/commit/7fdb47d345b899dae417ca8a7db1bac346253bcc))
+
+
+
+## [v0.1.1](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.0...ebullience/v0.1.1) (2022-03-01)
 
 
 ### Features
