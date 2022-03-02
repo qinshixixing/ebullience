@@ -1,4 +1,15 @@
-## [0.1.3](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.2...ebullience/0.1.3) (2022-03-02)
+# [0.2.0](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.3...ebullience/0.2.0) (2022-03-02)
+
+
+### Features
+
+* **调整命令行类型:** 1、新增update、update-all、build-all命令。2、修改build、release-all、release功能。 ([c958e88](https://github.com/qinshixixing/ebullience/commit/c958e88c3573a2156cb65f6678619ac9526cd7ab))
+* **升级依赖:** 1、升级依赖。2、修改脚本命令。 ([1790cd9](https://github.com/qinshixixing/ebullience/commit/1790cd9db442ebeb7937aa559d614c5fc59d815a))
+* **添加分号:** 添加分号 ([6bdf2f8](https://github.com/qinshixixing/ebullience/commit/6bdf2f8e009ab4a8809411c70195a86b1bb8ba96))
+
+
+
+## [v0.1.3](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.2...ebullience/v0.1.3) (2022-03-02)
 
 
 ### Features
