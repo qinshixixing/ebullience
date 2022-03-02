@@ -46,7 +46,7 @@ export const generateChangelog = async (path: string, tagPrefix: string) => {
  * 发布
  * @param path 包路径
  */
-const publish = async (path: string) => {
+export const publish = async (path: string) => {
   const label = '发布至npm仓库';
   timeLog(label, 'start');
   await runCommand(`npm publish ${path} --access=public`);

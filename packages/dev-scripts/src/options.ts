@@ -5,10 +5,13 @@ import { resolve } from 'path';
 export type TaskType =
   | 'new'
   | 'build'
+  | 'build-all'
   | 'commit'
   | 'commit-all'
   | 'release'
-  | 'release-all';
+  | 'release-all'
+  | 'update'
+  | 'update-all';
 
 export type ProjectType = 'web' | 'node';
 
@@ -70,22 +73,27 @@ export { allPackage };
 export const allCommand: CommandConfig[] = [
   {
     key: 'new',
-    description: '新建一个项目',
+    description: '新建一个项目(包)',
     options: ['newName', 'project', 'module', 'author', 'description']
   },
   {
     key: 'build',
-    description: '编译ts代码',
+    description: '编译包ts代码',
     options: ['name']
   },
   {
+    key: 'build-all',
+    description: '编译整个项目ts代码',
+    options: []
+  },
+  {
     key: 'commit',
-    description: '按照规范提交代码至git仓库',
+    description: '按照规范提交包代码至git仓库',
     options: ['name']
   },
   {
     key: 'commit-all',
-    description: '按照规范提交所有代码至git仓库',
+    description: '按照规范提交整个项目代码至git仓库',
     options: []
   },
   {
@@ -95,7 +103,17 @@ export const allCommand: CommandConfig[] = [
   },
   {
     key: 'release-all',
-    description: '更新整个git仓库版本并打tag',
+    description: '发布整个项目至npm仓库',
+    options: ['releaseType']
+  },
+  {
+    key: 'update',
+    description: '更新包的发布信息(生成CHANGELOG、更新版本号、打tag)',
+    options: ['name', 'releaseType']
+  },
+  {
+    key: 'update-all',
+    description: '更新整个项目的发布信息(生成CHANGELOG、更新版本号、打tag)',
     options: ['releaseType']
   }
 ];

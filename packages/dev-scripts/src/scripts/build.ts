@@ -27,4 +27,4 @@ const main = async (options: TaskOptions): Promise<void> => {
   await build(options.path);
 };
 
-export { main };
+export { main, build };
