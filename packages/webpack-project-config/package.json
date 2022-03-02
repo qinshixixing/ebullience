@@ -1,0 +1,31 @@
+{
+  "name": "@ebullience/webpack-project-config",
+  "author": "qinshixixing",
+  "version": "0.0.0",
+  "license": "Apache",
+  "description": "前端webpack项目代码配置文件",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinshixixing/ebullience.git",
+    "directory": "packages/webpack-project-config"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "files": [
+    "dist",
+    "src",
+    "type",
+    "typescript"
+  ],
+  "dependencies": {
+    "@ebullience/web-project-config": "^0.1.0"
+  }
+}
