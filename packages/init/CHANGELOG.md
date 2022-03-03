@@ -1,4 +1,13 @@
-# [0.2.0](https://github.com/qinshixixing/ebullience/compare/init/v0.1.0...init/0.2.0) (2022-03-03)
+# [0.3.0](https://github.com/qinshixixing/ebullience/compare/init/v0.2.0...init/0.3.0) (2022-03-03)
+
+
+### Features
+
+* **抽离逻辑提供第三方包使用:** 抽离逻辑，脚本移入bin，index用于导出变量 ([b22e88d](https://github.com/qinshixixing/ebullience/commit/b22e88d5bb0485f92723a243f705191e525a61d9))
+
+
+
+# [v0.2.0](https://github.com/qinshixixing/ebullience/compare/init/v0.1.0...init/v0.2.0) (2022-03-03)
 
 
 ### Features

@@ -1,7 +1,7 @@
 {
   "name": "@ebullience/init",
   "author": "qinshixixing",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "Apache",
   "description": "项目初始化配置运行文件",
   "publishConfig": {
