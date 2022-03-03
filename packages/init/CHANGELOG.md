@@ -1,4 +1,13 @@
-# [0.3.0](https://github.com/qinshixixing/ebullience/compare/init/v0.2.0...init/0.3.0) (2022-03-03)
+# [0.4.0](https://github.com/qinshixixing/ebullience/compare/init/v0.3.0...init/0.4.0) (2022-03-03)
+
+
+### Features
+
+* **修改脚本名称:** 修改脚本名称eb-init ([a45df1b](https://github.com/qinshixixing/ebullience/commit/a45df1be768e8cf51f97aa535d06fc1517fb82d8))
+
+
+
+# [v0.3.0](https://github.com/qinshixixing/ebullience/compare/init/v0.2.0...init/v0.3.0) (2022-03-03)
 
 
 ### Features
