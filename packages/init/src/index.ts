@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import type { Options } from './options.js';
-import { commandOptions } from './get-command.js';
-import { answer } from './get-answer.js';
+import { commandOptions } from './input/get-command.js';
+import { answer } from './input/get-answer.js';
 import { main as runTask } from './run-task.js';
 
 const options: Options = {

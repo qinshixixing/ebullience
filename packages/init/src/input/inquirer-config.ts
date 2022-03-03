@@ -1,14 +1,6 @@
 import chalk from 'chalk';
 import inquirer from 'inquirer';
-import { allDir, allOptions } from './options.js';
-import type { Options } from './options.js';
-import { commandOptions } from './get-command.js';
-
-const currentOptions = allOptions.filter((item) => {
-  const value = commandOptions[item.key];
-
-  return !value || (item.commandCheck && !item.commandCheck(value));
-});
+import { allDir, allOptions } from '../options.js';
 
 /**
  * 设置用户交互界面输入
@@ -56,25 +48,25 @@ const inquirerConfigList: InquirerConfig[] = [
   }
 ];
 
-const inquirerList = currentOptions.map((optionConfig) => {
-  let inquirerConfig = inquirerConfigList.find(
-    (item) => item.name === optionConfig.key
-  );
-  if (!inquirerConfig) inquirerConfig = { name: optionConfig.key };
-  inquirerConfig.type = 'input';
-  inquirerConfig.message = `请输入${optionConfig.description}`;
-  if (typeof optionConfig.default === 'string')
-    inquirerConfig.default = optionConfig.default;
+const getInquirerConfig = (commandOptions: { [key: string]: string }) => {
+  const currentOptions = allOptions.filter((item) => {
+    const value = commandOptions[item.key];
 
-  return inquirerConfig;
-});
+    return !value || (item.commandCheck && !item.commandCheck(value));
+  });
 
-/**
- * 获取用户交互界面输入
- */
-let answer: Partial<Options> = {};
-if (inquirerList.length) {
-  answer = await inquirer.prompt(inquirerList);
-}
+  return currentOptions.map((optionConfig) => {
+    let inquirerConfig = inquirerConfigList.find(
+      (item) => item.name === optionConfig.key
+    );
+    if (!inquirerConfig) inquirerConfig = { name: optionConfig.key };
+    inquirerConfig.type = 'input';
+    inquirerConfig.message = `请输入${optionConfig.description}`;
+    if (typeof optionConfig.default === 'string')
+      inquirerConfig.default = optionConfig.default;
 
-export { answer };
+    return inquirerConfig;
+  });
+};
+
+export { getInquirerConfig };
