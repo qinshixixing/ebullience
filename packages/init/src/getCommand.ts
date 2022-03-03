@@ -2,7 +2,7 @@ import yargsFn from 'yargs';
 import type { Options as YargsOptions } from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
-import { allOptions } from '../options.js';
+import { allOptions } from './options.js';
 
 const yargs = yargsFn(hideBin(process.argv));
 

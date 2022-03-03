@@ -1,6 +1,7 @@
 import chalk from 'chalk';
 import inquirer from 'inquirer';
-import { allDir, allOptions } from '../options.js';
+import { allDir, allOptions } from './options.js';
+import type { Options } from './options.js';
 
 /**
  * 设置用户交互界面输入
@@ -48,7 +49,8 @@ const inquirerConfigList: InquirerConfig[] = [
   }
 ];
 
-const getInquirerConfig = (commandOptions: { [key: string]: string }) => {
+type CommandOptions = { [key: string]: string };
+const getInquirerConfig = (commandOptions: CommandOptions) => {
   const currentOptions = allOptions.filter((item) => {
     const value = commandOptions[item.key];
 
@@ -69,4 +71,16 @@ const getInquirerConfig = (commandOptions: { [key: string]: string }) => {
   });
 };
 
-export { getInquirerConfig };
+/**
+ * 获取用户交互界面输入
+ */
+const getAnswer = async (commandOptions: CommandOptions) => {
+  const inquirerList = getInquirerConfig(commandOptions);
+  let answer: Partial<Options> = {};
+  if (inquirerList.length) {
+    answer = await inquirer.prompt(inquirerList);
+  }
+  return answer;
+};
+
+export { getInquirerConfig, getAnswer };
