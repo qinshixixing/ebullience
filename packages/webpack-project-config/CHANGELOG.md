@@ -1,4 +1,13 @@
-# 0.1.0 (2022-03-02)
+# [0.2.0](https://github.com/qinshixixing/ebullience/compare/webpack-project-config/v0.1.0...webpack-project-config/0.2.0) (2022-03-09)
+
+
+### Features
+
+* **修改prettier默认配置:** 修改prettier默认配置 ([537cf7a](https://github.com/qinshixixing/ebullience/commit/537cf7a7c26f57b1588b51013f3e40c481d4d70b))
+
+
+
+# [v0.1.0](https://github.com/qinshixixing/ebullience/compare/b7c9cd302b1ac472797d6fcee20bd48d5ceddd61...webpack-project-config/v0.1.0) (2022-03-02)
 
 
 ### Features
