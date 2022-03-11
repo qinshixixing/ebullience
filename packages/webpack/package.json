@@ -55,6 +55,7 @@
     "postcss-preset-env": "^6.7.1",
     "progress-bar-webpack-plugin": "^2.1.0",
     "resolve-url-loader": "^5.0.0",
+    "sanitize.css": "^12.0.1",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
     "style-loader": "^3.3.1",
@@ -70,8 +71,5 @@
     "@types/babel__core": "^7.1.18",
     "@types/clean-webpack-plugin": "^0.1.3",
     "@types/progress-bar-webpack-plugin": "^2.1.2"
-  },
-  "resolutions": {
-    "sanitize.css": "12.0.1"
   }
 }
