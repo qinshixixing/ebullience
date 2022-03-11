@@ -1,4 +1,13 @@
-## [0.0.2](https://github.com/qinshixixing/ebullience/compare/webpack/v0.0.1...webpack/0.0.2) (2022-03-11)
+## [0.0.3](https://github.com/qinshixixing/ebullience/compare/webpack/v0.0.2...webpack/0.0.3) (2022-03-11)
+
+
+### Features
+
+* **修复依赖冲突:** 修复sanitize.css依赖冲突问题 ([a063688](https://github.com/qinshixixing/ebullience/commit/a063688d388cf05fff2fa200c36232237899f2dc))
+
+
+
+## [v0.0.2](https://github.com/qinshixixing/ebullience/compare/webpack/v0.0.1...webpack/v0.0.2) (2022-03-11)
 
 
 ### Features
