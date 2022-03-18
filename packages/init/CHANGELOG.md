@@ -1,4 +1,13 @@
-# [0.7.0](https://github.com/qinshixixing/ebullience/compare/init/v0.6.0...init/0.7.0) (2022-03-18)
+# [0.8.0](https://github.com/qinshixixing/ebullience/compare/init/v0.7.0...init/0.8.0) (2022-03-18)
+
+
+### Bug Fixes
+
+* **修复传参问题:** 修复编译模版时传参问题 ([27dc3f7](https://github.com/qinshixixing/ebullience/commit/27dc3f7183c73b7989c16af752db4b9215150cd5))
+
+
+
+# [v0.7.0](https://github.com/qinshixixing/ebullience/compare/init/v0.6.0...init/v0.7.0) (2022-03-18)
 
 
 ### Bug Fixes
