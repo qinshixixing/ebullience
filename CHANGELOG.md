@@ -1,4 +1,21 @@
-# [0.2.0](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.3...ebullience/0.2.0) (2022-03-02)
+## [0.2.1](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.2.0...ebullience/0.2.1) (2022-03-18)
+
+
+### Features
+
+* **抽离逻辑提供第三方包使用:** 抽离逻辑，脚本移入bin，index用于导出变量 ([b22e88d](https://github.com/qinshixixing/ebullience/commit/b22e88d5bb0485f92723a243f705191e525a61d9))
+* **更新输入处理逻辑:** 拆分处理输入参数和问询的代码 ([54a1f42](https://github.com/qinshixixing/ebullience/commit/54a1f4226e7eb5f9d99a5581ef966ecda76acf4c))
+* **更新依赖:** 更新@ebullience/dev-scripts至v0.3.0 ([6d03c75](https://github.com/qinshixixing/ebullience/commit/6d03c7519b73f5745d4fb34aa87a099ba86563c9))
+* **生成项目时可配置文件夹下文件是否允许handlebars编译:** 生成项目时可配置文件夹下文件是否允许handlebars编译 ([736a96e](https://github.com/qinshixixing/ebullience/commit/736a96e6fe5dbccc6d6de87dc8b0d45e4b24baf8))
+* **生成项目时可配置文件夹下文件是否允许handlebars编译:** 生成项目时可配置文件夹下文件是否允许handlebars编译 ([8a37f5a](https://github.com/qinshixixing/ebullience/commit/8a37f5ac4db8f91e9463ac89e3e2f6c3b6fb663f))
+* **修复依赖冲突:** 修复sanitize.css依赖冲突问题 ([a063688](https://github.com/qinshixixing/ebullience/commit/a063688d388cf05fff2fa200c36232237899f2dc))
+* **修复依赖冲突:** 修复sanitize依赖冲突 ([cf93c0a](https://github.com/qinshixixing/ebullience/commit/cf93c0a185986ba3c621d719f27eaf6a5e34f6b0))
+* **修改脚本名称:** 修改脚本名称eb-init ([a45df1b](https://github.com/qinshixixing/ebullience/commit/a45df1be768e8cf51f97aa535d06fc1517fb82d8))
+* **修改prettier默认配置:** 修改prettier默认配置 ([537cf7a](https://github.com/qinshixixing/ebullience/commit/537cf7a7c26f57b1588b51013f3e40c481d4d70b))
+
+
+
+# [v0.2.0](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.1.3...ebullience/v0.2.0) (2022-03-02)
 
 
 ### Features
