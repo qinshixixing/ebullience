@@ -1,4 +1,8 @@
-# [0.4.0](https://github.com/qinshixixing/ebullience/compare/init/v0.3.0...init/0.4.0) (2022-03-03)
+# [0.5.0](https://github.com/qinshixixing/ebullience/compare/init/v0.4.0...init/0.5.0) (2022-03-18)
+
+
+
+# [v0.4.0](https://github.com/qinshixixing/ebullience/compare/init/v0.3.0...init/v0.4.0) (2022-03-03)
 
 
 ### Features
