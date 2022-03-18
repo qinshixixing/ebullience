@@ -36,7 +36,7 @@ const downloadFiles = async (
 const handleFiles = async (path: string, options: Options) => {
   const label = '处理文件';
   timeLog(label, 'start');
-  const task = async (dir: string) => {
+  const task = async (dir: string, compile?: boolean) => {
     const files = await readdir(dir);
     await Promise.all(
       files.map(async (file) => {
@@ -44,8 +44,8 @@ const handleFiles = async (path: string, options: Options) => {
         const stats = await stat(filePath);
         if (file.startsWith('.')) await remove(filePath);
         else if (stats.isDirectory()) {
-          await task(filePath);
-        } else {
+          await task(filePath, false);
+        } else if (compile) {
           const fileContent = await readFile(filePath, {
             encoding: 'utf8'
           });
