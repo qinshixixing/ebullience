@@ -1,4 +1,13 @@
-# [0.2.0](https://github.com/qinshixixing/ebullience/compare/dev-scripts/v0.1.0...dev-scripts/0.2.0) (2022-03-02)
+# [0.3.0](https://github.com/qinshixixing/ebullience/compare/dev-scripts/v0.2.0...dev-scripts/0.3.0) (2022-03-18)
+
+
+### Features
+
+* **生成项目时可配置文件夹下文件是否允许handlebars编译:** 生成项目时可配置文件夹下文件是否允许handlebars编译 ([8a37f5a](https://github.com/qinshixixing/ebullience/commit/8a37f5ac4db8f91e9463ac89e3e2f6c3b6fb663f))
+
+
+
+# [v0.2.0](https://github.com/qinshixixing/ebullience/compare/dev-scripts/v0.1.0...dev-scripts/v0.2.0) (2022-03-02)
 
 
 ### Features
