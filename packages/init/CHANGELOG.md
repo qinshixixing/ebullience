@@ -1,4 +1,13 @@
-# [0.6.0](https://github.com/qinshixixing/ebullience/compare/init/v0.5.0...init/0.6.0) (2022-03-18)
+# [0.7.0](https://github.com/qinshixixing/ebullience/compare/init/v0.6.0...init/0.7.0) (2022-03-18)
+
+
+### Bug Fixes
+
+* **修复删除多余文件问题:** 修改下载模版后删除文件逻辑 ([4673d7a](https://github.com/qinshixixing/ebullience/commit/4673d7a6c7c77eaa769569ae861aaf3e1dda4330))
+
+
+
+# [v0.6.0](https://github.com/qinshixixing/ebullience/compare/init/v0.5.0...init/v0.6.0) (2022-03-18)
 
 
 ### Features
