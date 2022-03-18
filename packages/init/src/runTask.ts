@@ -1,6 +1,7 @@
 import { stat, readFile, readdir, mkdir, writeFile } from 'fs/promises';
 import { remove } from 'fs-extra';
 import handlebars from 'handlebars';
+import { removePath } from './options.js';
 import type { Options } from './options.js';
 import { timeLog, runCommand } from './util.js';
 
@@ -42,7 +43,7 @@ const handleFiles = async (path: string, options: Options) => {
       files.map(async (file) => {
         const filePath = `${dir}/${file}`;
         const stats = await stat(filePath);
-        if (file.startsWith('.')) await remove(filePath);
+        if (removePath.includes(file)) await remove(filePath);
         else if (stats.isDirectory()) {
           await task(filePath, false);
         } else if (compile) {

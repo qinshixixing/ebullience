@@ -51,3 +51,5 @@ export const allOptions: OptionConfig[] = [
     description: '项目描述'
   }
 ];
+
+export const removePath: string[] = ['.git'];
