@@ -63,7 +63,7 @@ const handleFiles = async (path: string, options: Options) => {
       })
     );
   };
-  await task(path);
+  await task(path, true);
   timeLog(label, 'end');
 };
 
