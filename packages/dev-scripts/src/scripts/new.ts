@@ -49,7 +49,11 @@ const generateFiles = async (tplPath: string, options: TaskOptions) => {
 
   await mkdir(`${options.newPath}`);
 
-  const handleFiles = async (dir: string, outDir: string) => {
+  const handleFiles = async (
+    dir: string,
+    outDir: string,
+    compile?: boolean
+  ) => {
     const files = await readdir(dir);
     await Promise.all(
       files.map(async (file) => {
@@ -58,20 +62,23 @@ const generateFiles = async (tplPath: string, options: TaskOptions) => {
         if (stats.isDirectory()) {
           const dirPath = `${outDir}/${file}`;
           await mkdir(dirPath);
-          await handleFiles(filePath, dirPath);
+          await handleFiles(filePath, dirPath, false);
         } else {
           const fileContent = await readFile(filePath, {
             encoding: 'utf8'
           });
-          const template = handlebars.compile(fileContent);
-          const outputContent = template({
-            name: options.newName,
-            author: options.author,
-            description: options.description,
-            isCommonjs:
-              options.project === 'web' || options.module === 'commonjs',
-            isWeb: options.project === 'web'
-          });
+          let outputContent = fileContent;
+          if (compile) {
+            const template = handlebars.compile(fileContent);
+            outputContent = template({
+              name: options.newName,
+              author: options.author,
+              description: options.description,
+              isCommonjs:
+                options.project === 'web' || options.module === 'commonjs',
+              isWeb: options.project === 'web'
+            });
+          }
           await writeFile(`${outDir}/${file}`, outputContent, {
             encoding: 'utf8'
           });
@@ -80,7 +87,7 @@ const generateFiles = async (tplPath: string, options: TaskOptions) => {
     );
   };
 
-  await handleFiles(tplPath, options.newPath);
+  await handleFiles(tplPath, options.newPath, true);
   timeLog(label, 'end');
 };
 
