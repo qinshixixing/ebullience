@@ -1,4 +1,13 @@
-# [0.5.0](https://github.com/qinshixixing/ebullience/compare/init/v0.4.0...init/0.5.0) (2022-03-18)
+# [0.6.0](https://github.com/qinshixixing/ebullience/compare/init/v0.5.0...init/0.6.0) (2022-03-18)
+
+
+### Features
+
+* **生成项目时可配置文件夹下文件是否允许handlebars编译:** 生成项目时可配置文件夹下文件是否允许handlebars编译 ([736a96e](https://github.com/qinshixixing/ebullience/commit/736a96e6fe5dbccc6d6de87dc8b0d45e4b24baf8))
+
+
+
+# [v0.5.0](https://github.com/qinshixixing/ebullience/compare/init/v0.4.0...init/v0.5.0) (2022-03-18)
 
 
 
