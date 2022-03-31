@@ -1,4 +1,13 @@
-## [0.0.3](https://github.com/qinshixixing/ebullience/compare/webpack/v0.0.2...webpack/0.0.3) (2022-03-11)
+# [0.1.0](https://github.com/qinshixixing/ebullience/compare/webpack/v0.0.3...webpack/0.1.0) (2022-03-31)
+
+
+### Features
+
+* **升级依赖:** 升级依赖 ([e6eb6c7](https://github.com/qinshixixing/ebullience/commit/e6eb6c72c3f3500a5849a50bf72634ff9ecd0711))
+
+
+
+## [v0.0.3](https://github.com/qinshixixing/ebullience/compare/webpack/v0.0.2...webpack/v0.0.3) (2022-03-11)
 
 
 ### Features
