@@ -1,4 +1,13 @@
-# [0.1.0](https://github.com/qinshixixing/ebullience/compare/node-project-config/v0.0.3...node-project-config/0.1.0) (2022-03-01)
+# [0.2.0](https://github.com/qinshixixing/ebullience/compare/node-project-config/v0.1.0...node-project-config/0.2.0) (2022-04-28)
+
+
+### Features
+
+* **升级依赖:** 升级依赖 ([032ca87](https://github.com/qinshixixing/ebullience/commit/032ca87dfe5e46c80283757f324c9fe89b333b93))
+
+
+
+# [v0.1.0](https://github.com/qinshixixing/ebullience/compare/node-project-config/v0.0.3...node-project-config/v0.1.0) (2022-03-01)
 
 
 
