@@ -1,4 +1,13 @@
-# 0.1.0 (2022-03-01)
+# [0.2.0](https://github.com/qinshixixing/ebullience/compare/web-project-config/v0.1.0...web-project-config/0.2.0) (2022-04-28)
+
+
+### Features
+
+* **升级依赖:** 升级依赖 ([f4b798c](https://github.com/qinshixixing/ebullience/commit/f4b798c8ada9219f0e2e7b2aa8891ba4c2eca503))
+
+
+
+# [v0.1.0](https://github.com/qinshixixing/ebullience/compare/097824fb1e055a2843fd029b33aa55b9ac88fbf9...web-project-config/v0.1.0) (2022-03-01)
 
 
 ### Features
