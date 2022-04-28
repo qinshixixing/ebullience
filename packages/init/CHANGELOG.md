@@ -1,4 +1,13 @@
-# [0.8.0](https://github.com/qinshixixing/ebullience/compare/init/v0.7.0...init/0.8.0) (2022-03-18)
+# [0.9.0](https://github.com/qinshixixing/ebullience/compare/init/v0.8.0...init/0.9.0) (2022-04-28)
+
+
+### Features
+
+* **升级依赖:** 升级依赖 ([0167d65](https://github.com/qinshixixing/ebullience/commit/0167d65a05334193109d49634a71d9fedad94e40))
+
+
+
+# [v0.8.0](https://github.com/qinshixixing/ebullience/compare/init/v0.7.0...init/v0.8.0) (2022-03-18)
 
 
 ### Bug Fixes
