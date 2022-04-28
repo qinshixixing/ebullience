@@ -1,6 +1,6 @@
-import { Configuration } from 'stylelint';
+import { Config } from 'stylelint';
 
-const config: Partial<Configuration> = {
+const config: Partial<Config> = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-css-modules',
