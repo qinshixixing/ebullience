@@ -1,4 +1,13 @@
-# [0.3.0](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.2.2...ebullience/0.3.0) (2022-04-28)
+## [0.3.1](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.3.0...ebullience/0.3.1) (2022-04-28)
+
+
+### Features
+
+* **修改依赖:** 修改依赖 ([c810f0f](https://github.com/qinshixixing/ebullience/commit/c810f0fadf1df90346a50b24b448419d9c8eb42d))
+
+
+
+# [v0.3.0](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.2.2...ebullience/v0.3.0) (2022-04-28)
 
 
 
