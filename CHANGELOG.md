@@ -1,4 +1,8 @@
-## [0.2.2](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.2.1...ebullience/0.2.2) (2022-04-28)
+# [0.3.0](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.2.2...ebullience/0.3.0) (2022-04-28)
+
+
+
+## [v0.2.2](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.2.1...ebullience/v0.2.2) (2022-04-28)
 
 
 ### Bug Fixes
