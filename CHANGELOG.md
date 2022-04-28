@@ -1,4 +1,27 @@
-## [0.2.1](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.2.0...ebullience/0.2.1) (2022-03-18)
+## [0.2.2](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.2.1...ebullience/0.2.2) (2022-04-28)
+
+
+### Bug Fixes
+
+* 升级依赖 ([6a71b4f](https://github.com/qinshixixing/ebullience/commit/6a71b4fa32be2799c148c60cc55164850a3547ea))
+* **修复传参问题:** 修复编译模版时传参问题 ([27dc3f7](https://github.com/qinshixixing/ebullience/commit/27dc3f7183c73b7989c16af752db4b9215150cd5))
+* **修复删除多余文件问题:** 修改下载模版后删除文件逻辑 ([4673d7a](https://github.com/qinshixixing/ebullience/commit/4673d7a6c7c77eaa769569ae861aaf3e1dda4330))
+
+
+### Features
+
+* **升级依赖:** 升级依赖 ([01ddb6b](https://github.com/qinshixixing/ebullience/commit/01ddb6b35029f0cd7a4e92b5122da6028f1de96d))
+* **升级依赖:** 升级依赖 ([b676aa1](https://github.com/qinshixixing/ebullience/commit/b676aa139b42b8e6274016ffff0c29d7ec5d0ba8))
+* **升级依赖:** 升级依赖 ([d0c3197](https://github.com/qinshixixing/ebullience/commit/d0c31975fae3ad9d617e4d8840cb952c3a38e67d))
+* **升级依赖:** 升级依赖 ([f4b798c](https://github.com/qinshixixing/ebullience/commit/f4b798c8ada9219f0e2e7b2aa8891ba4c2eca503))
+* **升级依赖:** 升级依赖 ([0167d65](https://github.com/qinshixixing/ebullience/commit/0167d65a05334193109d49634a71d9fedad94e40))
+* **升级依赖:** 升级依赖 ([d9ec110](https://github.com/qinshixixing/ebullience/commit/d9ec1103c7a7d06f6788f8aba6aa758b791066d2))
+* **升级依赖:** 升级依赖 ([032ca87](https://github.com/qinshixixing/ebullience/commit/032ca87dfe5e46c80283757f324c9fe89b333b93))
+* **升级依赖:** 升级依赖 ([e6eb6c7](https://github.com/qinshixixing/ebullience/commit/e6eb6c72c3f3500a5849a50bf72634ff9ecd0711))
+
+
+
+## [v0.2.1](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.2.0...ebullience/v0.2.1) (2022-03-18)
 
 
 ### Features
