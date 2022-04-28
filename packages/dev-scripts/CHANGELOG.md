@@ -1,4 +1,13 @@
-# [0.3.0](https://github.com/qinshixixing/ebullience/compare/dev-scripts/v0.2.0...dev-scripts/0.3.0) (2022-03-18)
+# [0.4.0](https://github.com/qinshixixing/ebullience/compare/dev-scripts/v0.3.0...dev-scripts/0.4.0) (2022-04-28)
+
+
+### Features
+
+* **升级依赖:** 升级依赖 ([d9ec110](https://github.com/qinshixixing/ebullience/commit/d9ec1103c7a7d06f6788f8aba6aa758b791066d2))
+
+
+
+# [v0.3.0](https://github.com/qinshixixing/ebullience/compare/dev-scripts/v0.2.0...dev-scripts/v0.3.0) (2022-03-18)
 
 
 ### Features
