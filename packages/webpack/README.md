@@ -55,6 +55,7 @@ webpackTask(taskType, configPath)
 |libraryName|打包库时库的名称|string|''|
 |libraryWithStyle|打包组件库时库时是否有样式文件|boolean|false|
 |thirdLib|第三方库配置，声明的库不会被打包至dist中|{ [propName: string]: string }|{}|配置对象的key为node_modules中的库文件夹名，value为在全局作用域下的名称（比如挂在window哪个属性下）|
+|lib|第三方库配置，声明的库不会被打包至dist中|{ [propName: string]: string | string[] }|{}|配置对象的key为node_modules中的库文件夹名，value为在全局作用域下的名称（比如挂在window哪个属性下）|
 |processEnv|打包时配置的环境变量|{ [propName: string]: any }|{}|
 |proxy|开发时代理配置|{ [propName: string]: string }|{}|本地请求转发，同部署时nginx配置|
 |extend|webpack自定义配置扩展，可以修改默认配置|(config?: Configuration) => Configuration|undefined|

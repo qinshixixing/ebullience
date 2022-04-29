@@ -2,6 +2,7 @@ import { TransformOptions } from '@babel/core';
 import { LibraryImport } from '../option';
 
 function getConfig({
+  type = 'js',
   isSrc = true,
   isBuild = true,
   libOnDemand = <Partial<LibraryImport>[]>[]
@@ -18,30 +19,37 @@ function getConfig({
           helpers: true,
           regenerator: true,
           useESModules: true
-        }
+        },
+        [
+          '@babel/preset-react',
+          {
+            useBuiltIns: 'usage',
+            development: !isBuild
+          }
+        ]
       ]
     ]
   };
-  if (isSrc) {
-    config.presets?.push(
-      [
-        '@babel/preset-react',
-        {
-          useBuiltIns: 'usage',
-          development: !isBuild
-        }
-      ],
-      [
-        '@babel/typescript',
-        {
-          isTSX: true,
-          allExtensions: true,
-          onlyRemoveTypeImports: true
-        }
-      ]
-    );
+  if (type !== 'js' || isSrc) {
+    config.presets?.push([
+      '@babel/preset-react',
+      {
+        useBuiltIns: 'usage',
+        development: !isBuild
+      }
+    ]);
   } else {
-    config.babelrc = config.configFile = false;
+    config.babelrc = config.configFile = config.compact = false;
+  }
+  if (type === 'ts') {
+    config.presets?.push([
+      '@babel/typescript',
+      {
+        isTSX: false,
+        allExtensions: false,
+        onlyRemoveTypeImports: true
+      }
+    ]);
   }
   return config;
 }

@@ -12,14 +12,24 @@ function getConfig({
 }) {
   const parseLoaders = [
     {
-      test: /\.(js|ts)x?$/,
+      test: /\.js$/,
       include: srcDir,
-      use: getBabelLoader({ isSrc: true, isBuild, libOnDemand })
+      use: getBabelLoader({ type: 'js', isSrc: true, isBuild, libOnDemand })
     },
     {
-      test: /\.(mjs|ts|tsx)$/,
+      test: /\.js$/,
       exclude: /@babel(?:\/|\\{1,2})runtime/,
-      use: getBabelLoader({ isSrc: false, isBuild, libOnDemand })
+      use: getBabelLoader({ type: 'js', isSrc: false, isBuild, libOnDemand })
+    },
+    {
+      test: /\.(mjs|mjsx|jsx)$/,
+      exclude: /@babel(?:\/|\\{1,2})runtime/,
+      use: getBabelLoader({ type: 'mjs', isSrc: false, isBuild, libOnDemand })
+    },
+    {
+      test: /\.tsx?$/,
+      exclude: /@babel(?:\/|\\{1,2})runtime/,
+      use: getBabelLoader({ type: 'ts', isSrc: false, isBuild, libOnDemand })
     },
     {
       test: /\.(?<!global\.)css$/,

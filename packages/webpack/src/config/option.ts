@@ -9,7 +9,7 @@ export interface LibraryImport {
 
 export interface Option {
   isBuild: boolean;
-  inputFile: string;
+  inputFile: string | string[];
   outputName: string;
   rootDir: string;
   srcDir: string;
@@ -25,6 +25,7 @@ export interface Option {
   library: boolean;
   libraryName: string;
   libraryWithStyle: boolean;
+  lib: { [propName: string]: string | string[] };
   thirdLib: { [propName: string]: string };
   processEnv: { [propName: string]: any };
   proxy: { [propName: string]: string };
@@ -49,6 +50,7 @@ const defaultOption: Option = {
   library: false,
   libraryName: '',
   libraryWithStyle: false,
+  lib: {},
   thirdLib: {},
   processEnv: {},
   proxy: {}

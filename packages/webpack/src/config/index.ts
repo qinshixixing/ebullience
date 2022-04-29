@@ -1,5 +1,10 @@
 import path from 'path';
-import type { Configuration, ModuleOptions, ResolveOptions } from 'webpack';
+import type {
+  Configuration,
+  ModuleOptions,
+  ResolveOptions,
+  EntryObject
+} from 'webpack';
 import type {
   Configuration as DevServerConfiguration,
   ProxyConfigMap
@@ -27,10 +32,13 @@ function getConfig(option: Partial<Option>) {
     library,
     libraryName,
     libraryWithStyle,
+    lib,
     thirdLib,
     processEnv,
     proxy
   } = setOption(option);
+
+  const allInputFile = Array.isArray(inputFile) ? inputFile : [inputFile];
 
   const loaders = getLoaders({
     srcDir,
@@ -41,7 +49,7 @@ function getConfig(option: Partial<Option>) {
   });
   const plugins = getPlugins({
     isBuild,
-    inputFile,
+    inputFile: allInputFile,
     outputName,
     showDetailProgress,
     srcDir,
@@ -67,9 +75,24 @@ function getConfig(option: Partial<Option>) {
 
   const config: Configuration = {
     context: rootDir,
-    entry: {
-      index: path.resolve(srcDir, inputFile)
-    },
+    entry: (() => {
+      const data: EntryObject = {};
+      const libKeys = Object.keys(lib);
+      allInputFile.forEach((name) => {
+        const filePath = path.resolve(srcDir, name);
+        const fileName = path.parse(filePath).name;
+        if (libKeys.length > 0) {
+          data[fileName] = {
+            import: filePath,
+            dependOn: libKeys
+          };
+        } else data[fileName] = filePath;
+      });
+      Object.keys(lib).forEach((key) => {
+        data[key] = lib[key];
+      });
+      return data;
+    })(),
     output: {
       filename: `${outputName}.js`,
       chunkFilename: `${outputName}.js`,

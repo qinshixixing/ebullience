@@ -8,11 +8,12 @@ interface LoaderOptions extends TransformOptions {
 }
 
 function getConfig({
+  type = 'js',
   isSrc = true,
   isBuild = true,
   libOnDemand = <Partial<LibraryImport>[]>[]
 }) {
-  const babelConfig = getBabelConfig({ isSrc, isBuild, libOnDemand });
+  const babelConfig = getBabelConfig({ type, isSrc, isBuild, libOnDemand });
   const options: LoaderOptions = {
     cacheDirectory: true,
     cacheCompression: false,

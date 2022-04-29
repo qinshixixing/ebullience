@@ -25,7 +25,7 @@ import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 function getConfig({
   isBuild = true,
-  inputFile = '',
+  inputFile = [''],
   outputName = '',
   showDetailProgress = false,
   srcDir = '',
@@ -38,15 +38,20 @@ function getConfig({
   const plugins: WebpackPluginInstance[] = [new CleanWebpackPlugin()];
 
   if (!library) {
-    const name = path.parse(inputFile).name;
-    plugins.push(
-      new HtmlWebpackPlugin({
-        hash: true,
-        inject: 'body',
-        minify: true,
-        template: path.resolve(srcDir, `${name}.html`)
-      })
-    );
+    inputFile.forEach((item) => {
+      const pathInfo = path.parse(item);
+      const name = pathInfo.name;
+      const dir = pathInfo.dir;
+      plugins.push(
+        new HtmlWebpackPlugin({
+          hash: true,
+          inject: 'body',
+          minify: true,
+          filename: `${outputName}.html`,
+          template: path.resolve(srcDir, `${path.join(dir, name)}.html`)
+        })
+      );
+    });
   }
 
   if (!isBuild && supportIE)
