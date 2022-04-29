@@ -1,4 +1,13 @@
-# [0.3.0](https://github.com/qinshixixing/ebullience/compare/webpack-project-config/v0.2.0...webpack-project-config/0.3.0) (2022-04-28)
+## [0.3.1](https://github.com/qinshixixing/ebullience/compare/webpack-project-config/v0.3.0...webpack-project-config/0.3.1) (2022-04-29)
+
+
+### Features
+
+* **修改类型声明:** 修改类型声明 ([f6173aa](https://github.com/qinshixixing/ebullience/commit/f6173aa8e4bb6868791e83072c5e084396622f22))
+
+
+
+# [v0.3.0](https://github.com/qinshixixing/ebullience/compare/webpack-project-config/v0.2.0...webpack-project-config/v0.3.0) (2022-04-28)
 
 
 ### Bug Fixes
