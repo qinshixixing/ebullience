@@ -42,13 +42,14 @@ function getConfig({
       const pathInfo = path.parse(item);
       const name = pathInfo.name;
       const dir = pathInfo.dir;
+      const relativePath = path.join(dir, name);
       plugins.push(
         new HtmlWebpackPlugin({
           hash: true,
           inject: 'body',
           minify: true,
-          filename: `${outputName}.html`,
-          template: path.resolve(srcDir, `${path.join(dir, name)}.html`)
+          filename: `${relativePath}.html`,
+          template: path.resolve(srcDir, `${relativePath}.html`)
         })
       );
     });
