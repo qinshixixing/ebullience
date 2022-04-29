@@ -1,4 +1,13 @@
-## [0.3.1](https://github.com/qinshixixing/ebullience/compare/webpack-project-config/v0.3.0...webpack-project-config/0.3.1) (2022-04-29)
+## [0.3.2](https://github.com/qinshixixing/ebullience/compare/webpack-project-config/v0.3.1...webpack-project-config/0.3.2) (2022-04-29)
+
+
+### Features
+
+* **升级依赖:** 升级依赖 ([0ecabc1](https://github.com/qinshixixing/ebullience/commit/0ecabc16c42fa95013173c9c91aa279f329ccf60))
+
+
+
+## [v0.3.1](https://github.com/qinshixixing/ebullience/compare/webpack-project-config/v0.3.0...webpack-project-config/v0.3.1) (2022-04-29)
 
 
 ### Features
