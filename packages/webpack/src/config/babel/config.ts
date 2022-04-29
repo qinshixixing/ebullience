@@ -19,14 +19,7 @@ function getConfig({
           helpers: true,
           regenerator: true,
           useESModules: true
-        },
-        [
-          '@babel/preset-react',
-          {
-            useBuiltIns: 'usage',
-            development: !isBuild
-          }
-        ]
+        }
       ]
     ]
   };
