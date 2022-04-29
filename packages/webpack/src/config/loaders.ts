@@ -17,11 +17,6 @@ function getConfig({
       use: getBabelLoader({ type: 'js', isSrc: true, isBuild, libOnDemand })
     },
     {
-      test: /\.js$/,
-      exclude: /@babel(?:\/|\\{1,2})runtime/,
-      use: getBabelLoader({ type: 'js', isSrc: false, isBuild, libOnDemand })
-    },
-    {
       test: /\.(mjs|mjsx|jsx)$/,
       exclude: /@babel(?:\/|\\{1,2})runtime/,
       use: getBabelLoader({ type: 'mjs', isSrc: false, isBuild, libOnDemand })
