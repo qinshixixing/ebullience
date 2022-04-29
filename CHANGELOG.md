@@ -1,4 +1,15 @@
-## [0.3.1](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.3.0...ebullience/0.3.1) (2022-04-28)
+## [0.3.2](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.3.1...ebullience/0.3.2) (2022-04-29)
+
+
+### Features
+
+* **修改类型声明:** 修改类型声明 ([f6173aa](https://github.com/qinshixixing/ebullience/commit/f6173aa8e4bb6868791e83072c5e084396622f22))
+* **修改依赖:** 修改依赖 ([54b4e35](https://github.com/qinshixixing/ebullience/commit/54b4e35db95396e309f5a3b2e7dcf7869fd4f90c))
+* **增加配置:** 1、增加第三方库配置。2、增加多入口配置。3、优化babel配置。 ([04da2d0](https://github.com/qinshixixing/ebullience/commit/04da2d02c214f5c657d8f645f269cb33f1b369c9))
+
+
+
+## [v0.3.1](https://github.com/qinshixixing/ebullience/compare/ebullience/v0.3.0...ebullience/v0.3.1) (2022-04-28)
 
 
 ### Features
