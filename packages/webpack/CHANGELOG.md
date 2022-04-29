@@ -1,4 +1,13 @@
-## [0.3.2](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.1...webpack/0.3.2) (2022-04-29)
+## [0.3.3](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.2...webpack/0.3.3) (2022-04-29)
+
+
+### Bug Fixes
+
+* **修复生成html文件名问题:** 去除生成html文件hash值 ([2880adb](https://github.com/qinshixixing/ebullience/commit/2880adba7b35f3a7af1fc88bbdf98f25fbe8234b))
+
+
+
+## [v0.3.2](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.1...webpack/v0.3.2) (2022-04-29)
 
 
 ### Bug Fixes
