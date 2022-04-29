@@ -1,4 +1,13 @@
-## [0.2.1](https://github.com/qinshixixing/ebullience/compare/web-project-config/v0.2.0...web-project-config/0.2.1) (2022-04-29)
+## [0.2.2](https://github.com/qinshixixing/ebullience/compare/web-project-config/v0.2.1...web-project-config/0.2.2) (2022-04-29)
+
+
+### Bug Fixes
+
+* **修复less、scss配置:** 修复less、scss配置 ([0740584](https://github.com/qinshixixing/ebullience/commit/07405847356c492b3acc7186c848470eb1f8f411))
+
+
+
+## [v0.2.1](https://github.com/qinshixixing/ebullience/compare/web-project-config/v0.2.0...web-project-config/v0.2.1) (2022-04-29)
 
 
 ### Bug Fixes
