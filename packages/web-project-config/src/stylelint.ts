@@ -23,7 +23,21 @@ const config: Partial<Config> = {
   overrides: [
     {
       files: ['**/*.less'],
-      customSyntax: 'postcss-less'
+      customSyntax: 'postcss-less',
+      rules: {
+        'selector-class-pattern': [
+          '^([a-z][a-zA-Z0-9]*)(-[a-zA-Z0-9]+)*$',
+          {
+            message: 'Expected id selector to be kebab-case'
+          }
+        ],
+        'selector-id-pattern': [
+          '^([a-z][a-zA-Z0-9]*)(-[a-zA-Z0-9]+)*$',
+          {
+            message: 'Expected id selector to be kebab-case'
+          }
+        ]
+      }
     },
     { files: ['**/*.scss'], extends: ['stylelint-config-standard-scss'] }
   ]
