@@ -26,6 +26,6 @@
     "typescript"
   ],
   "dependencies": {
-    "@ebullience/web-project-config": "^0.2.0"
+    "@ebullience/web-project-config": "^0.2.3"
   }
 }
