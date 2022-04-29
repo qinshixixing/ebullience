@@ -1,4 +1,13 @@
-## [0.3.1](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.0...webpack/0.3.1) (2022-04-29)
+## [0.3.2](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.1...webpack/0.3.2) (2022-04-29)
+
+
+### Bug Fixes
+
+* **修复babel配置问题:** 修复babel配置问题 ([ce0b40b](https://github.com/qinshixixing/ebullience/commit/ce0b40b5d8216e91c7e5bb754449df2240ba38c4))
+
+
+
+## [v0.3.1](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.0...webpack/v0.3.1) (2022-04-29)
 
 
 ### Bug Fixes
