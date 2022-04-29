@@ -1,4 +1,13 @@
-## [0.2.2](https://github.com/qinshixixing/ebullience/compare/web-project-config/v0.2.1...web-project-config/0.2.2) (2022-04-29)
+## [0.2.3](https://github.com/qinshixixing/ebullience/compare/web-project-config/v0.2.2...web-project-config/0.2.3) (2022-04-29)
+
+
+### Features
+
+* **优化less配置:** 优化less配置 ([ae3e815](https://github.com/qinshixixing/ebullience/commit/ae3e8159a3a614c40f5d851a46bb983071293f27))
+
+
+
+## [v0.2.2](https://github.com/qinshixixing/ebullience/compare/web-project-config/v0.2.1...web-project-config/v0.2.2) (2022-04-29)
 
 
 ### Bug Fixes
