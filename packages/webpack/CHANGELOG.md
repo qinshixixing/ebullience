@@ -1,4 +1,13 @@
-## [0.2.1-0](https://github.com/qinshixixing/ebullience/compare/webpack/v0.2.0...webpack/0.2.1-0) (2022-04-29)
+# [0.3.0](https://github.com/qinshixixing/ebullience/compare/webpack/v0.2.1-0...webpack/0.3.0) (2022-04-29)
+
+
+### Features
+
+* **增加配置:** 1、增加第三方库配置。2、增加多入口配置。3、优化babel配置。 ([04da2d0](https://github.com/qinshixixing/ebullience/commit/04da2d02c214f5c657d8f645f269cb33f1b369c9))
+
+
+
+## [v0.2.1-0](https://github.com/qinshixixing/ebullience/compare/webpack/v0.2.0...webpack/v0.2.1-0) (2022-04-29)
 
 
 
