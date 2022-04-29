@@ -1,7 +1,7 @@
-import { Configuration } from 'stylelint';
+import { Config } from 'stylelint';
 import { stylelint } from '@ebullience/web-project-config';
 
-const config: Partial<Configuration> = {
+const config: Partial<Config> = {
   ...stylelint,
   rules: {
     ...stylelint.rules,
