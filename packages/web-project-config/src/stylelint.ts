@@ -4,11 +4,9 @@ const config: Partial<Config> = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-css-modules',
-    'stylelint-config-standard-scss',
     'stylelint-config-prettier'
   ],
   plugins: ['stylelint-css-modules'],
-  customSyntax: 'postcss-less',
   rules: {
     'css-modules/composed-class-names': true,
     'css-modules/css-variables': [
@@ -21,7 +19,14 @@ const config: Partial<Config> = {
       }
     ],
     'selector-list-comma-space-after': 'always-single-line'
-  }
+  },
+  overrides: [
+    {
+      files: ['**/*.less'],
+      customSyntax: 'postcss-less'
+    },
+    { files: ['**/*.scss'], extends: ['stylelint-config-standard-scss'] }
+  ]
 };
 
 export { config };
