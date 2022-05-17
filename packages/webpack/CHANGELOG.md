@@ -1,4 +1,13 @@
-## [0.3.3](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.2...webpack/0.3.3) (2022-04-29)
+## [0.3.4](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.3...webpack/0.3.4) (2022-05-17)
+
+
+### Features
+
+* **修改less-loader、sass-loader中sourcemap配置:** 修改less-loader、sass-loader中sourcemap配置 ([1cd74cc](https://github.com/qinshixixing/ebullience/commit/1cd74cc4b313120f4c8618ae1c945bf91d0fe9bd))
+
+
+
+## [v0.3.3](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.2...webpack/v0.3.3) (2022-04-29)
 
 
 ### Bug Fixes
