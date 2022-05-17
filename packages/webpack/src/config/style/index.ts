@@ -44,12 +44,18 @@ function getConfig({
     options: {
       lessOptions: {
         javascriptEnabled: true,
-        modifyVars: theme
+        modifyVars: theme,
+        sourceMap: true
       }
     }
   };
 
-  const sassLoader = 'sass-loader';
+  const sassLoader = {
+    loader: 'sass-loader',
+    options: {
+      sourceMap: true
+    }
+  };
 
   const config: RuleSetUse = [styleLoader, cssLoader, postcssLoader];
   if (preType) {
