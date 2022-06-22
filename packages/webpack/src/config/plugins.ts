@@ -18,6 +18,7 @@ import TerserWebpackPlugin from 'terser-webpack-plugin';
 import ESLintWebpackPlugin from 'eslint-webpack-plugin';
 import CssMinimizerWebpackPlugin from 'css-minimizer-webpack-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
+import CompressionWebpackPlugin from 'compression-webpack-plugin';
 
 // use <WebpackPluginInstance> before "new" because d.ts files are conflict
 // d.ts file is wrong
@@ -160,6 +161,17 @@ function getConfig({
             to: ''
           }
         ]
+      })
+    );
+
+  if (isBuild)
+    plugins.push(
+      new CompressionWebpackPlugin({
+        test: /\.(js|css|html|svg)$/,
+        filename: '[path][base].gz',
+        algorithm: 'gzip',
+        threshold: 10240,
+        minRatio: 0.8
       })
     );
 

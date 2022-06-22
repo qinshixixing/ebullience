@@ -125,18 +125,26 @@ function getConfig(option: Partial<Option>) {
           splitChunks: {
             chunks: 'all',
             // automaticNameDelimiter: '/',
+            minSize: 20000,
+            maxSize: 1000000,
+            minRemainingSize: 0,
+            minChunks: 1,
+            maxAsyncRequests: 30,
+            maxInitialRequests: 30,
+            enforceSizeThreshold: 50000,
             cacheGroups: {
               react: {
                 test: /node_modules\/react/,
-                priority: 10
+                priority: 20
               },
               antd: {
-                test: /node_modules\/(antd|@ant-design)/,
+                test: /node_modules\/antd|@ant-design/,
                 priority: 10
               },
               vendors: {
                 test: /[\\/]node_modules[\\/]/,
-                priority: -10
+                priority: -10,
+                reuseExistingChunk: true
               },
               default: {
                 minChunks: 2,
