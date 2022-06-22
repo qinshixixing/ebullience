@@ -1,7 +1,7 @@
 {
   "name": "@ebullience/webpack",
   "author": "qinshixixing",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "license": "Apache",
   "description": "webpack配置运行文件（使用webpack5，webpack-dev-server4）",
   "publishConfig": {

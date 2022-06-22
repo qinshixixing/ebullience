@@ -1,4 +1,13 @@
-## [0.3.4](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.3...webpack/0.3.4) (2022-05-17)
+## [0.3.5](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.4...webpack/0.3.5) (2022-06-22)
+
+
+### Features
+
+* **优化打包后体积:** 1、修改split最大大小。2、添加gzip压缩插件。 ([05b3b36](https://github.com/qinshixixing/ebullience/commit/05b3b363af2512a06b9654eab9b638c3150e94a6))
+
+
+
+## [v0.3.4](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.3...webpack/v0.3.4) (2022-05-17)
 
 
 ### Features
