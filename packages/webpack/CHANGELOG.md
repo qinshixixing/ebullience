@@ -1,4 +1,13 @@
-## [0.3.6-0](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.5...webpack/0.3.6-0) (2022-06-24)
+## [0.3.6-1](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.6-0...webpack/0.3.6-1) (2022-06-24)
+
+
+### Bug Fixes
+
+* **修复loader路径问题:** 修复babel-loader路径问题 ([7823e09](https://github.com/qinshixixing/ebullience/commit/7823e097e2835c3c977a75d1688ae0395c4bcaad))
+
+
+
+## [v0.3.6-0](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.5...webpack/v0.3.6-0) (2022-06-24)
 
 
 ### Features
