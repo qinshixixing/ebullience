@@ -32,8 +32,9 @@ function getConfig(option: Partial<Option>) {
     library,
     libraryName,
     libraryWithStyle,
-    lib,
-    thirdLib,
+    externalLib,
+    internalLib,
+    compileLib,
     processEnv,
     proxy
   } = setOption(option);
@@ -45,6 +46,7 @@ function getConfig(option: Partial<Option>) {
     outputName,
     isBuild,
     theme,
+    compileLib,
     libOnDemand
   });
   const plugins = getPlugins({
@@ -77,19 +79,26 @@ function getConfig(option: Partial<Option>) {
     context: rootDir,
     entry: (() => {
       const data: EntryObject = {};
-      const libKeys = Object.keys(lib);
+      const libConfig: Record<string, string[]> = {};
+      Object.keys(internalLib).forEach((key) => {
+        const libName = internalLib[key] || 'vendor';
+        if (!libConfig[libName]) libConfig[libName] = [];
+        libConfig[libName].push(key);
+      });
+      const libNameKeys = Object.keys(libConfig);
+      libNameKeys.forEach((key) => {
+        data[key] = libConfig[key];
+      });
       allInputFile.forEach((name) => {
         const filePath = path.resolve(srcDir, name);
         const fileName = path.parse(filePath).name;
-        if (libKeys.length > 0) {
-          data[fileName] = {
-            import: filePath,
-            dependOn: libKeys
-          };
-        } else data[fileName] = filePath;
-      });
-      Object.keys(lib).forEach((key) => {
-        data[key] = lib[key];
+        data[fileName] =
+          libNameKeys.length > 0
+            ? {
+                import: filePath,
+                dependOn: libNameKeys
+              }
+            : filePath;
       });
       return data;
     })(),
@@ -159,15 +168,17 @@ function getConfig(option: Partial<Option>) {
       hints: false
     },
     externals: (() => {
-      const data: { [propName: string]: { [propName: string]: string } } = {};
-      const keys = Object.keys(thirdLib);
+      const data: Record<string, Record<string, string> | string> = {};
+      const keys = Object.keys(externalLib);
       keys.forEach((key) => {
-        data[key] = {
-          commonjs: key,
-          commonjs2: key,
-          amd: key,
-          root: thirdLib[key]
-        };
+        data[key] = library
+          ? {
+              commonjs: key,
+              commonjs2: key,
+              amd: key,
+              root: externalLib[key]
+            }
+          : `var ${externalLib[key]}`;
       });
       return data;
     })(),

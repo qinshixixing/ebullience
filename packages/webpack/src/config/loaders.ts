@@ -8,12 +8,13 @@ function getConfig({
   outputName = '',
   isBuild = true,
   theme = {},
+  compileLib = <string[]>[],
   libOnDemand = <Partial<LibraryImport>[]>[]
 }) {
   const parseLoaders = [
     {
       test: /\.js$/,
-      include: srcDir,
+      include: [srcDir, ...compileLib.map((item) => `node_modules/${item}`)],
       use: getBabelLoader({ type: 'js', isSrc: true, isBuild, libOnDemand })
     },
     {

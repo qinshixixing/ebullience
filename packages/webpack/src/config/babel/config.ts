@@ -9,7 +9,12 @@ function getConfig({
 }) {
   const config: TransformOptions = {
     compact: isSrc ? isBuild : false,
-    presets: [['@babel/preset-env']],
+    presets: [
+      [
+        '@babel/preset-env',
+        { useBuiltIns: 'usage', corejs: '3.22', modules: false }
+      ]
+    ],
     plugins: [
       ...libOnDemand.map((item) => [['import', item, item.libraryName]]),
       [

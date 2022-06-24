@@ -19,15 +19,16 @@ export interface Option {
   showDetailProgress: boolean;
   host: string;
   port: string;
-  theme: { [propName: string]: string | number };
+  theme: Record<string, string | number>;
   libOnDemand: Partial<LibraryImport>[];
   supportIE: boolean;
   library: boolean;
   libraryName: string;
   libraryWithStyle: boolean;
-  lib: { [propName: string]: string | string[] };
-  thirdLib: { [propName: string]: string };
-  processEnv: { [propName: string]: any };
+  internalLib: Record<string, string>;
+  externalLib: Record<string, string>;
+  compileLib: string[];
+  processEnv: Record<string, any>;
   proxy: { [propName: string]: string };
   extend?: (config?: Configuration) => Configuration;
 }
@@ -50,8 +51,9 @@ const defaultOption: Option = {
   library: false,
   libraryName: '',
   libraryWithStyle: false,
-  lib: {},
-  thirdLib: {},
+  internalLib: {},
+  externalLib: {},
+  compileLib: [],
   processEnv: {},
   proxy: {}
 };
@@ -79,8 +81,8 @@ function setOption(option: Partial<Option>) {
       totalOption.publicPath || (totalOption.library ? './' : '/');
   } else totalOption.publicPath = '/';
   if (totalOption.library) {
-    totalOption.thirdLib = {
-      ...totalOption.thirdLib,
+    totalOption.externalLib = {
+      ...totalOption.externalLib,
       react: 'React',
       'react-dom': 'ReactDOM'
     };
