@@ -1,4 +1,13 @@
-## [0.3.6-1](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.6-0...webpack/0.3.6-1) (2022-06-24)
+## [0.3.6](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.6-1...webpack/0.3.6) (2022-06-24)
+
+
+### Features
+
+* **新增配置项:** 新增aliasDir选项，用于设置目录别名 ([aaa0baf](https://github.com/qinshixixing/ebullience/commit/aaa0bafe9dd88fa81a501efabcf63e7adccdc640))
+
+
+
+## [v0.3.6-1](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.6-0...webpack/v0.3.6-1) (2022-06-24)
 
 
 ### Bug Fixes
