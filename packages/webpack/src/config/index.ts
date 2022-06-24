@@ -22,6 +22,7 @@ function getConfig(option: Partial<Option>) {
     srcDir,
     outputDir,
     staticDir,
+    aliasDir,
     publicPath,
     showDetailProgress,
     host,
@@ -70,10 +71,16 @@ function getConfig(option: Partial<Option>) {
 
   const resolve: ResolveOptions = {
     extensions: ['.wasm', '.js', '.ts', '.tsx', '.json'],
-    alias: {
-      '@@': rootDir,
-      '@': srcDir
-    }
+    alias: (() => {
+      const data: Record<string, string> = {
+        '@@': rootDir,
+        '@': srcDir
+      };
+      Object.keys(aliasDir).forEach((key) => {
+        data[key] = path.resolve(rootDir, aliasDir[key]);
+      });
+      return data;
+    })()
   };
 
   const config: Configuration = {

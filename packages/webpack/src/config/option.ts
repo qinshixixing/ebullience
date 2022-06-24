@@ -15,6 +15,7 @@ export interface Option {
   srcDir: string;
   staticDir: string;
   outputDir: string;
+  aliasDir: Record<string, string>;
   publicPath: string | (() => string);
   showDetailProgress: boolean;
   host: string;
@@ -41,6 +42,7 @@ const defaultOption: Option = {
   srcDir: 'src',
   staticDir: 'static',
   outputDir: 'dist',
+  aliasDir: {},
   publicPath: '',
   showDetailProgress: false,
   host: '0.0.0.0',

@@ -45,6 +45,7 @@ webpackTask(taskType, configPath)
 | staticDir          | 静态文件目录                         | string                                    | 'static'                            |
 | outputDir          | 输出文件目录                         | string                                    | 'dist'                              |
 | publicPath         | 公共文件路径                         | string/() => string                       | library为true时为'./'，否则为'/'           | 同webpack配置                                                         |
+| aliasDir           | 目录路径别名配置                       | Record<string, string>                    | {}                                  ||
 | showDetailProgress | 是否显示详细打包日志                     | boolean                                   | false                               |
 | host               | 开发时本地host                      | string                                    | 0.0.0.0                             |
 | port               | 开发时本地port                      | string                                    | 8888                                |
