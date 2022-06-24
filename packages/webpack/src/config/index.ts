@@ -42,6 +42,7 @@ function getConfig(option: Partial<Option>) {
   const allInputFile = Array.isArray(inputFile) ? inputFile : [inputFile];
 
   const loaders = getLoaders({
+    rootDir,
     srcDir,
     outputName,
     isBuild,

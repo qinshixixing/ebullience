@@ -1,9 +1,11 @@
+import path from 'path';
 import { RuleSetRule } from 'webpack';
 import getBabelLoader from './babel';
 import getStyleLoader from './style';
 import { LibraryImport } from './option';
 
 function getConfig({
+  rootDir = process.cwd(),
   srcDir = 'src',
   outputName = '',
   isBuild = true,
@@ -14,7 +16,10 @@ function getConfig({
   const parseLoaders = [
     {
       test: /\.js$/,
-      include: [srcDir, ...compileLib.map((item) => `node_modules/${item}`)],
+      include: [
+        srcDir,
+        ...compileLib.map((item) => path.resolve(rootDir, 'node_modules', item))
+      ],
       use: getBabelLoader({ type: 'js', isSrc: true, isBuild, libOnDemand })
     },
     {
