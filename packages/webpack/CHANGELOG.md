@@ -1,4 +1,13 @@
-## [0.3.5](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.4...webpack/0.3.5) (2022-06-22)
+## [0.3.6-0](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.5...webpack/0.3.6-0) (2022-06-24)
+
+
+### Features
+
+* **修改与第三方库相关打包选项和规则:** 1、修改thirdLib为externalLib。2、修改lib为internalLib。3、新增compileLib。 ([9256d1c](https://github.com/qinshixixing/ebullience/commit/9256d1c45d4cddaadbad6ca0910ef2fbc04e3e1f))
+
+
+
+## [v0.3.5](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.4...webpack/v0.3.5) (2022-06-22)
 
 
 ### Features
