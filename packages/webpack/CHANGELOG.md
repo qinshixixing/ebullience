@@ -1,4 +1,14 @@
-## [0.3.7-1](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.7-0...webpack/0.3.7-1) (2022-06-28)
+## [0.3.7](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.7-1...webpack/0.3.7) (2022-06-28)
+
+
+### Features
+
+* **优化打包:** 1、开发时去除显式hot声明。2、只打包gzip包。 ([fe9c60e](https://github.com/qinshixixing/ebullience/commit/fe9c60eef385b7654425b61c5de7b758266a85ee))
+* **添加打包优化选项:** 添加gzipOnly选项配置 ([ab44ffa](https://github.com/qinshixixing/ebullience/commit/ab44ffa149107c26d10703dfb910bb34d7b6cfd0))
+
+
+
+## [v0.3.7-1](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.7-0...webpack/v0.3.7-1) (2022-06-28)
 
 
 ### Bug Fixes
