@@ -170,8 +170,8 @@ function getConfig({
         test: /\.(js|css|html|svg)$/,
         filename: '[path][base].gz',
         algorithm: 'gzip',
-        threshold: 10240,
-        minRatio: 0.8
+        threshold: 4096,
+        minRatio: 0.9
       })
     );
 
