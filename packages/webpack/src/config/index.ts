@@ -45,6 +45,7 @@ function getConfig(option: Partial<Option>) {
   const loaders = getLoaders({
     rootDir,
     srcDir,
+    staticDir,
     outputName,
     isBuild,
     theme,
@@ -141,13 +142,12 @@ function getConfig(option: Partial<Option>) {
           minimizer: plugins.optimizationPlugins,
           splitChunks: {
             chunks: 'all',
-            // automaticNameDelimiter: '/',
             minSize: 20000,
             maxSize: 1000000,
             minRemainingSize: 0,
             minChunks: 1,
-            maxAsyncRequests: 30,
-            maxInitialRequests: 30,
+            maxAsyncRequests: 35,
+            maxInitialRequests: 35,
             enforceSizeThreshold: 50000,
             cacheGroups: {
               react: {
@@ -172,7 +172,7 @@ function getConfig(option: Partial<Option>) {
           }
         },
     performance: {
-      maxEntrypointSize: 1024000,
+      maxEntrypointSize: 1000000,
       hints: false
     },
     externals: (() => {

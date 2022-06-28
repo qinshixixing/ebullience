@@ -7,6 +7,7 @@ import { LibraryImport } from './option';
 function getConfig({
   rootDir = process.cwd(),
   srcDir = 'src',
+  staticDir = 'static',
   outputName = '',
   isBuild = true,
   theme = {},
@@ -79,6 +80,7 @@ function getConfig({
     },
     {
       test: /\.(jpe?g|png|svg|gif|bmp|woff|woff2|eot|ttf|otf)$/,
+      type: 'asset',
       use: [
         {
           loader: 'url-loader',
@@ -91,7 +93,10 @@ function getConfig({
     },
     {
       loader: 'file-loader',
+      type: 'asset',
+      include: srcDir,
       exclude: [
+        /\.(jpe?g|png|svg|gif|bmp|woff|woff2|eot|ttf|otf)$/,
         /\.(js|ts)x?$/,
         /\.(mjs|cjs)$/,
         /\.(c|le|sa|sc|)ss$/,

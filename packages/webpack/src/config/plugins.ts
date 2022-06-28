@@ -158,7 +158,8 @@ function getConfig({
           {
             from: staticDir,
             // to: path.parse(staticDir).name
-            to: ''
+            to: '',
+            noErrorOnMissing: true
           }
         ]
       })
