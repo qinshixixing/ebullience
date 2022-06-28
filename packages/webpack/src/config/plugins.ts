@@ -34,7 +34,8 @@ function getConfig({
   supportIE = false,
   library = false,
   libraryWithStyle = false,
-  processEnv = {}
+  processEnv = {},
+  gzipOnly = true
 }) {
   const plugins: WebpackPluginInstance[] = [new CleanWebpackPlugin()];
 
@@ -173,7 +174,7 @@ function getConfig({
         algorithm: 'gzip',
         threshold: 4096,
         minRatio: 0.9,
-        deleteOriginalAssets: true
+        deleteOriginalAssets: gzipOnly
       })
     );
 

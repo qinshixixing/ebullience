@@ -37,7 +37,8 @@ function getConfig(option: Partial<Option>) {
     internalLib,
     compileLib,
     processEnv,
-    proxy
+    proxy,
+    gzipOnly
   } = setOption(option);
 
   const allInputFile = Array.isArray(inputFile) ? inputFile : [inputFile];
@@ -62,7 +63,8 @@ function getConfig(option: Partial<Option>) {
     supportIE,
     library,
     libraryWithStyle,
-    processEnv
+    processEnv,
+    gzipOnly
   });
 
   const module: ModuleOptions = {

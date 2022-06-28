@@ -32,6 +32,7 @@ export interface Option {
   processEnv: Record<string, any>;
   proxy: { [propName: string]: string };
   extend?: (config?: Configuration) => Configuration;
+  gzipOnly: boolean;
 }
 
 const defaultOption: Option = {
@@ -57,7 +58,8 @@ const defaultOption: Option = {
   externalLib: {},
   compileLib: [],
   processEnv: {},
-  proxy: {}
+  proxy: {},
+  gzipOnly: true
 };
 
 function setOption(option: Partial<Option>) {
