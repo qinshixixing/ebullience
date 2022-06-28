@@ -33,6 +33,7 @@ export interface Option {
   proxy: { [propName: string]: string };
   extend?: (config?: Configuration) => Configuration;
   gzipOnly: boolean;
+  chunkMaxSize: number;
 }
 
 const defaultOption: Option = {
@@ -59,7 +60,8 @@ const defaultOption: Option = {
   compileLib: [],
   processEnv: {},
   proxy: {},
-  gzipOnly: true
+  gzipOnly: true,
+  chunkMaxSize: 1000
 };
 
 function setOption(option: Partial<Option>) {

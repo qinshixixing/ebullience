@@ -38,7 +38,8 @@ function getConfig(option: Partial<Option>) {
     compileLib,
     processEnv,
     proxy,
-    gzipOnly
+    gzipOnly,
+    chunkMaxSize
   } = setOption(option);
 
   const allInputFile = Array.isArray(inputFile) ? inputFile : [inputFile];
@@ -66,6 +67,8 @@ function getConfig(option: Partial<Option>) {
     processEnv,
     gzipOnly
   });
+
+  const chunkMaxSizeValue = chunkMaxSize * 1000;
 
   const module: ModuleOptions = {
     strictExportPresence: true,
@@ -145,7 +148,7 @@ function getConfig(option: Partial<Option>) {
           splitChunks: {
             chunks: 'all',
             minSize: 20000,
-            maxSize: 1000000,
+            maxSize: chunkMaxSizeValue,
             minRemainingSize: 0,
             minChunks: 1,
             maxAsyncRequests: 35,
@@ -174,7 +177,8 @@ function getConfig(option: Partial<Option>) {
           }
         },
     performance: {
-      maxEntrypointSize: 1000000,
+      maxEntrypointSize: chunkMaxSizeValue,
+      maxAssetSize: chunkMaxSizeValue,
       hints: false
     },
     externals: (() => {
