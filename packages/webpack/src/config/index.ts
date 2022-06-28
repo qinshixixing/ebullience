@@ -200,7 +200,6 @@ function getConfig(option: Partial<Option>) {
 
   const devServerConfig: DevServerConfiguration = {
     compress: true,
-    hot: true,
     port,
     host,
     historyApiFallback: true,

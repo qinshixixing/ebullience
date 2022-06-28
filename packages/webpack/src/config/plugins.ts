@@ -172,7 +172,8 @@ function getConfig({
         filename: '[path][base].gz',
         algorithm: 'gzip',
         threshold: 4096,
-        minRatio: 0.9
+        minRatio: 0.9,
+        deleteOriginalAssets: true
       })
     );
 
