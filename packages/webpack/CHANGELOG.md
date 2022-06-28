@@ -1,4 +1,13 @@
-## [0.3.7](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.7-1...webpack/0.3.7) (2022-06-28)
+## [0.3.8](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.7...webpack/0.3.8) (2022-06-28)
+
+
+### Features
+
+* **添加打包优化配置:** 添加chunkMaxSize配置，限制最大chunk大小 ([bd78c5c](https://github.com/qinshixixing/ebullience/commit/bd78c5c61146427e2e134bc1b301b01cf718bc6e))
+
+
+
+## [v0.3.7](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.7-1...webpack/v0.3.7) (2022-06-28)
 
 
 ### Features
