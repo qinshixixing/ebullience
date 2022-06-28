@@ -1,4 +1,13 @@
-## [0.3.7-0](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.6...webpack/0.3.7-0) (2022-06-28)
+## [0.3.7-1](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.7-0...webpack/0.3.7-1) (2022-06-28)
+
+
+### Bug Fixes
+
+* **修复打包错误:** 1、优化file-loader打包逻辑。2、优化分包逻辑。 ([751576e](https://github.com/qinshixixing/ebullience/commit/751576ef649deb690b459f50f429ef22e582977e))
+
+
+
+## [v0.3.7-0](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.6...webpack/v0.3.7-0) (2022-06-28)
 
 
 ### Features
