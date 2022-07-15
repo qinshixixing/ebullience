@@ -1,4 +1,13 @@
-## [0.3.8](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.7...webpack/0.3.8) (2022-06-28)
+## [0.3.9](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.8...webpack/0.3.9) (2022-07-15)
+
+
+### Features
+
+* **增加第三方包回退选项:** 增加第三方包回退选项fallbackDir ([baa3a03](https://github.com/qinshixixing/ebullience/commit/baa3a0364520a7c7de52f294e529282604f66a3d))
+
+
+
+## [v0.3.8](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.7...webpack/v0.3.8) (2022-06-28)
 
 
 ### Features
