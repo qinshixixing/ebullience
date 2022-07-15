@@ -23,6 +23,7 @@ function getConfig(option: Partial<Option>) {
     outputDir,
     staticDir,
     aliasDir,
+    fallbackDir,
     publicPath,
     showDetailProgress,
     host,
@@ -83,7 +84,21 @@ function getConfig(option: Partial<Option>) {
         '@': srcDir
       };
       Object.keys(aliasDir).forEach((key) => {
-        data[key] = path.resolve(rootDir, aliasDir[key]);
+        let value = aliasDir[key];
+        if (value.startsWith('/') || value.startsWith('./'))
+          value = path.resolve(rootDir, value);
+        data[key] = value;
+      });
+      return data;
+    })(),
+    fallback: (() => {
+      const data: Record<string, string> = {};
+      Object.keys(fallbackDir).forEach((key) => {
+        let value = fallbackDir[key];
+        if (value.startsWith('/') || value.startsWith('./'))
+          value = path.resolve(rootDir, value);
+        else value = require.resolve(value);
+        data[key] = value;
       });
       return data;
     })()

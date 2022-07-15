@@ -46,6 +46,7 @@ webpackTask(taskType, configPath)
 | outputDir          | 输出文件目录                         | string                                    | 'dist'                              |
 | publicPath         | 公共文件路径                         | string/() => string                       | library为true时为'./'，否则为'/'           | 同webpack配置                                                         |
 | aliasDir           | 目录路径别名配置                       | Record<string, string>                    | {}                                  ||
+| fallbackDir        | 目录路径回退配置                       | Record<string, string>                    | {}                                  ||
 | showDetailProgress | 是否显示详细打包日志                     | boolean                                   | false                               |
 | host               | 开发时本地host                      | string                                    | 0.0.0.0                             |
 | port               | 开发时本地port                      | string                                    | 8888                                |
@@ -62,5 +63,5 @@ webpackTask(taskType, configPath)
 | proxy              | 开发时代理配置                        | { [propName: string]: string }            | {}                                  | 本地请求转发，同部署时nginx配置                                                 |
 | extend             | webpack自定义配置扩展，可以修改默认配置        | (config?: Configuration) => Configuration | undefined                           |
 | gzipOnly           | 是否只保留gzip压缩后的包                 | boolean                                   | true                                |
-| chunkMaxSize           | chunk最大文件大小（kb）                | number                                    | 1000                                |
+| chunkMaxSize       | chunk最大文件大小（kb）                | number                                    | 1000                                |
 
