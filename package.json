@@ -20,6 +20,7 @@
   },
   "type": "module",
   "devDependencies": {
+    "@ebullience/init": "file:./packages/init",
     "@ebullience/node-project-config": "file:./packages/node-project-config",
     "@tsconfig/node16": "^1.0.2",
     "@tsconfig/recommended": "^1.0.1",
