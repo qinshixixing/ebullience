@@ -1,0 +1,33 @@
+{
+  "name": "@ebullience/init-quasar",
+  "author": "qinshixixing",
+  "version": "0.0.0",
+  "license": "Apache",
+  "description": "quasar项目初始化配置运行文件",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qinshixixing/ebullience.git",
+    "directory": "packages/init-quasar"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "src/index.ts",
+  "files": [
+    "dist",
+    "src",
+    "type"
+  ],
+  "bin": {
+    "eb-init-quasar": "dist/bin.js"
+  },
+  "dependencies": {
+    "@ebullience/init": "^0.9.0"
+  }
+}
