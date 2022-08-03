@@ -1,7 +1,7 @@
 {
   "name": "@ebullience/init-quasar",
   "author": "qinshixixing",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "license": "Apache",
   "description": "quasar项目初始化配置运行文件",
   "publishConfig": {
