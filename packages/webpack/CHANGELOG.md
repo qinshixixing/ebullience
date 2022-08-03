@@ -1,4 +1,13 @@
-## [0.3.9](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.8...webpack/0.3.9) (2022-07-15)
+## [0.3.10](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.9...webpack/0.3.10) (2022-08-03)
+
+
+### Bug Fixes
+
+* **修复多入口html打包问题:** 多入口html添加chunks配置 ([1f08e7e](https://github.com/qinshixixing/ebullience/commit/1f08e7e6dd73d4ff2021eae096cc6c7b5dae0a5a))
+
+
+
+## [v0.3.9](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.8...webpack/v0.3.9) (2022-07-15)
 
 
 ### Features
