@@ -50,6 +50,7 @@ function getConfig({
           hash: true,
           inject: 'body',
           minify: true,
+          chunks: [relativePath],
           filename: `${relativePath}.html`,
           template: path.resolve(srcDir, `${relativePath}.html`)
         })
