@@ -1,4 +1,13 @@
-## [0.3.10](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.9...webpack/0.3.10) (2022-08-03)
+## [0.4.1](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.10...webpack/0.4.1) (2023-09-29)
+
+
+### Features
+
+* **锁定版本:** 锁定版本 ([e1983f1](https://github.com/qinshixixing/ebullience/commit/e1983f1d501ef039eb9eb53672743d9627eccfd2))
+
+
+
+## [v0.3.10](https://github.com/qinshixixing/ebullience/compare/webpack/v0.3.9...webpack/v0.3.10) (2022-08-03)
 
 
 ### Bug Fixes
